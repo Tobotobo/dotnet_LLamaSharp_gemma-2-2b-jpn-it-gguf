@@ -11,10 +11,14 @@ Hugging Face - grapevine-AI/gemma-2-2b-jpn-it-gguf
 https://huggingface.co/grapevine-AI/gemma-2-2b-jpn-it-gguf/tree/main  
 gemma-2-2B-jpn-it-IQ4_XS.gguf  
 
+LLamaSharp  
+https://github.com/SciSharp/LLamaSharp  
+
 ## 結果
-* すげぇええええええ！！！！
-* ちょっとだけおかしい日本語もあるけど、ほぼ完ぺきだし、これを 2B の Q4 で回答できるのはやばすぎる。。。回答も早いし。。。
-* AI の進化やばいな。これだけ軽量でこの性能ならローカルのアプリに乗せられるかもしれん
+* すげぇええええええ！！！！けど！
+* ~~ちょっとだけおかしい日本語もあるけど、ほぼ完ぺきだし、これを 2B の Q4 で回答できるのはやばすぎる。。。回答も早いし。。。~~
+* ~~AI の進化やばいな。これだけ軽量でこの性能ならローカルのアプリに乗せられるかもしれん~~
+* やっぱまだ怪しかった...所謂 ChatGPT みたいな汎用的なものを期待するのは NG で、変換とか抽出とか限定的なタスクならギリいけるかも(Example2.cs 参照) 
 
 ## 詳細
 
@@ -24,7 +28,7 @@ dotnet add package LLamaSharp --version 0.16.0
 dotnet add package LLamaSharp.Backend.Cpu --version 0.16.0
 ```
 
-gemma-2-2B-jpn-it-IQ4_XS.gguf をダウンロードし C:\models に配置
+gemma-2-2B-jpn-it-IQ4_XS.gguf をダウンロードし models に配置
 
 ```
 dotnet run
